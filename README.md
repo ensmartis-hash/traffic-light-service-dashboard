@@ -1,7 +1,11 @@
-<<<<<<< HEAD
+
 # Dashboard
 
 Local service monitoring dashboard for opencode, openclaw, hermes-agent, jarvis-mcp, ollama, and litellm.
+<img width="925" height="812" alt="Screenshot 2026-03-29 at 11 49 35" src="https://github.com/user-attachments/assets/98ab6d1b-6b73-4343-aca3-910c616e70c5" />
+
+<img width="917" height="889" alt="Screenshot 2026-03-29 at 11 49 43" src="https://github.com/user-attachments/assets/d204e310-bc29-438e-b93e-051b77969937" />
+
 
 ## Features
 - Dark theme service cards
@@ -32,4 +36,4 @@ http://localhost:3000
 =======
 # traffic-light-service-dashboard
 Just a simple local dashboard of the services and the state of them, logs etc. 
->>>>>>> c1d46aa93183b8c63b89aea310a7d5d352c3f250
+
