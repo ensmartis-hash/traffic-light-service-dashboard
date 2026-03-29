@@ -1,0 +1,75 @@
+{
+  "services": [
+    {
+      "name": "OpenCode",
+      "id": "opencode",
+      "url": "http://localhost",
+      "port": 8080,
+      "healthEndpoint": "/health",
+      "logPath": "~/.opencode/logs",
+      "startCommand": "opencode serve",
+      "stopCommand": "pkill -f 'opencode serve'",
+      "description": "OpenCode web service"
+    },
+    {
+      "name": "OpenClaw",
+      "id": "openclaw",
+      "url": "http://localhost",
+      "port": 8090,
+      "healthEndpoint": "/health",
+      "logPath": "~/.openclaw/logs",
+      "startCommand": "openclaw serve",
+      "stopCommand": "pkill -f 'openclaw'",
+      "description": "OpenClaw service"
+    },
+    {
+      "name": "Hermes Agent",
+      "id": "hermes-agent",
+      "url": "http://localhost",
+      "port": 8100,
+      "healthEndpoint": "/health",
+      "logPath": "~/hermes-agent/logs",
+      "startCommand": "hermes-agent start",
+      "stopCommand": "pkill -f 'hermes-agent'",
+      "description": "Hermes Agent service"
+    },
+    {
+      "name": "Jarvis MCP",
+      "id": "jarvis-mcp",
+      "url": "http://localhost",
+      "port": 8200,
+      "healthEndpoint": "/health",
+      "logPath": "~/jarvis-mcp/logs",
+      "startCommand": "jarvis-mcp start",
+      "stopCommand": "pkill -f 'jarvis-mcp'",
+      "description": "Jarvis MCP server"
+    },
+    {
+      "name": "Ollama",
+      "id": "ollama",
+      "url": "http://localhost",
+      "port": 11434,
+      "healthEndpoint": "/api/tags",
+      "logPath": "~/.ollama/logs",
+      "startCommand": "ollama serve",
+      "stopCommand": "pkill -f 'ollama serve'",
+      "description": "Ollama LLM service"
+    },
+    {
+      "name": "LiteLLM",
+      "id": "litellm",
+      "url": "http://localhost",
+      "port": 4000,
+      "healthEndpoint": "/health",
+      "logPath": "~/.litellm/logs",
+      "startCommand": "litellm",
+      "stopCommand": "pkill -f 'litellm'",
+      "description": "LiteLLM proxy service"
+    }
+  ],
+  "settings": {
+    "refreshInterval": 30000,
+    "healthCheckTimeout": 5000,
+    "logLines": 50
+  }
+}

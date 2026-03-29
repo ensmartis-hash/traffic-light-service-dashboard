@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Service Dashboard</h1>
+      <div class="header-controls">
+        <span class="last-refresh" id="lastRefresh">Last refresh: --</span>
+        <select id="refreshRate" class="refresh-select">
+          <option value="10000">10s</option>
+          <option value="30000" selected>30s</option>
+          <option value="60000">60s</option>
+          <option value="0">Manual</option>
+        </select>
+        <input id="customRefresh" class="refresh-input" type="number" min="5" step="5" placeholder="Custom sec">
+        <button id="applyRefresh" class="btn btn-secondary">Apply</button>
+        <button id="refreshBtn" class="btn btn-primary">Refresh</button>
+      </div>
+    </header>
+
+    <main class="services-grid" id="servicesGrid">
+    </main>
+
+    <footer class="footer">
+      <span id="statusSummary">Loading services...</span>
+    </footer>
+  </div>
+
+  <div class="modal" id="logModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="logModalTitle">Service Logs</h2>
+        <button class="btn-close" id="closeLogModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <pre id="logContent" class="log-content">Loading...</pre>
+      </div>
+      <div class="modal-footer">
+        <label class="auto-scroll">
+          <input type="checkbox" id="autoScroll" checked>
+          Auto-scroll
+        </label>
+        <button class="btn btn-secondary" id="refreshLogs">Refresh Logs</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="controlModal">
+    <div class="modal-content modal-small">
+      <div class="modal-header">
+        <h2 id="controlModalTitle">Service Control</h2>
+        <button class="btn-close" id="closeControlModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="controlMessage">Select an action:</p>
+        <div class="control-buttons">
+          <button class="btn btn-success" id="btnStart">Start</button>
+          <button class="btn btn-danger" id="btnStop">Stop</button>
+          <button class="btn btn-warning" id="btnRestart">Restart</button>
+        </div>
+        <pre id="controlOutput" class="control-output"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/services.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
