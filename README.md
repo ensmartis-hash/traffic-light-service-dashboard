@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dashboard
 
 Local service monitoring dashboard for opencode, openclaw, hermes-agent, jarvis-mcp, ollama, and litellm.
@@ -28,3 +29,7 @@ http://localhost:3000
 ## Notes
 - Controls execute the configured local command.
 - If a service cannot be controlled automatically, the command is still shown in the UI so it can be run manually.
+=======
+# traffic-light-service-dashboard
+Just a simple local dashboard of the services and the state of them, logs etc. 
+>>>>>>> c1d46aa93183b8c63b89aea310a7d5d352c3f250
