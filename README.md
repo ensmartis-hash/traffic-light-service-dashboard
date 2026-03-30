@@ -33,7 +33,4 @@ http://localhost:3000
 ## Notes
 - Controls execute the configured local command.
 - If a service cannot be controlled automatically, the command is still shown in the UI so it can be run manually.
-=======
-# traffic-light-service-dashboard
-Just a simple local dashboard of the services and the state of them, logs etc. 
 
